@@ -15,7 +15,7 @@ import {
   Settings,
   Shield
 } from 'lucide-react';
-import { Button } from '@/ui/button';
+import { Button } from './ui/button';
 
 export const Layout = ({ children }) => {
   const { user, company, logout } = useAuth();
