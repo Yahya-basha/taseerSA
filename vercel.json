@@ -19,24 +19,9 @@
       "dest": "backend/server.py"
     },
     {
-      "src": "/static/(.*)",
-      "dest": "frontend/static/$1"
-    },
-    {
-      "src": "/favicon.ico",
-      "dest": "frontend/favicon.ico"
-    },
-    {
-      "src": "/manifest.json",
-      "dest": "frontend/manifest.json"
-    },
-    {
-      "src": "/logo192.png",
-      "dest": "frontend/logo192.png"
-    },
-    {
-      "src": "/logo512.png",
-      "dest": "frontend/logo512.png"
+      "src": "/(.*)",
+      "dest": "frontend/$1",
+      "continue": true
     },
     {
       "src": "/(.*)",
