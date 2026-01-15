@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '.@/contexts/AuthContext';
 import {
   LayoutDashboard,
   Package,
@@ -15,7 +15,7 @@ import {
   Settings,
   Shield
 } from 'lucide-react';
-import { Button } from './ui/button';
+import { Button } from '@/ui/button';
 
 export const Layout = ({ children }) => {
   const { user, company, logout } = useAuth();
