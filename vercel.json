@@ -19,13 +19,20 @@
       "dest": "backend/server.py"
     },
     {
-      "src": "/(.*)",
-      "dest": "frontend/$1",
-      "continue": true
+      "src": "/static/(.*)",
+      "dest": "/frontend/static/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "frontend/index.html"
+      "dest": "/frontend/$1",
+      "continue": true
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/frontend/index.html"
     }
   ]
 }
