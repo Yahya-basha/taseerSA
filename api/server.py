@@ -42,7 +42,7 @@ app = FastAPI()
 api_router = APIRouter(prefix="/api")
 
 # CORS Configuration
-cors_origins = os.environ.get('CORS_ORIGINS', 'http://localhost:3000').split(',')
+cors_origins = os.environ.get('CORS_ORIGINS', '*').split(',')
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[origin.strip() for origin in cors_origins],
