@@ -7,7 +7,7 @@ import { Label } from '.@/components/ui/label';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '.@/components/ui/dialog';
 import { Plus, Pencil, Trash2 } from 'lucide-react';
 import { toast } from 'sonner';
-import { useAuth } from '.@/contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;

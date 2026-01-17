@@ -8,7 +8,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '.@/components/
 import { Plus, Edit2, Trash2, AlertCircle, Building2, Toggle2, Upload } from 'lucide-react';
 import { toast } from 'sonner';
 import { Alert, AlertDescription } from '.@/components/ui/alert';
-import { useAuth } from '.@/contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useAuth } from '.@/contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '.@/components/ui/card';
 import { Button } from '.@/components/ui/button';
 import { Input } from '.@/components/ui/input';
